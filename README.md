@@ -1,5 +1,5 @@
 ![Awesome SEO tools cover](/awesome-seo-tools-cover.webp)
-
+npx tailwindcss -i ./css/input.css -o ./css/style.css --watch
 # Awesome SEO tools
 
 Curated list of awesome SEO (Search Engine Optimization) tools to help improve your website's ranking and visibility on search engines.
