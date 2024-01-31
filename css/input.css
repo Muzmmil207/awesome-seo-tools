@@ -21,3 +21,76 @@ h2 {
 footer {
     background: #42b983;
 }
+
+#sidebar {
+    transition: all 0.3s ease;
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+#label-btn {
+    transition: all 0.3s ease;
+}
+
+#label-btn.active {
+    left: 247px;
+}
+
+.list-items li {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid #333;
+    transition: all 0.3s ease;
+}
+
+.list-items li:hover {
+    box-shadow: 0 0 10px 3px #222;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transform: all 0.25s;
+    position: relative;
+}
+
+.hambuger-top,
+.hambuger-middle,
+.hambuger-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: #fff;
+    transform: rotate(0);
+    transition: all 0.5s;
+}
+
+.hambuger-middle {
+    transform: translateY(7px);
+}
+
+.hambuger-bottom {
+    transform: translateY(14px);
+}
+
+.open {
+    transform: rotate(90%) translateY(0px);
+}
+
+.open .hambuger-top {
+    transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hambuger-middle {
+    display: none;
+}
+
+.open .hambuger-bottom {
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
